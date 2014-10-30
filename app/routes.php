@@ -16,7 +16,7 @@
 	return View::make('hello');
 });
 
-/*Route::group(array('before' => 'auth'), function()
+Route::group(array('before' => 'auth'), function()
 {*/
         \Route::get('elfinder', 'Barryvdh\Elfinder\ElfinderController@showIndex');
         \Route::any('elfinder/connector', 'Barryvdh\Elfinder\ElfinderController@showConnector');
